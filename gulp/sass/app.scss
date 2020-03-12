@@ -21,6 +21,11 @@
   src:  url('fonts/gilroy-light.ttf') format('ttf')
 }
 
+html {
+  // height: 232vh;
+  // overflow-y: hidden;
+}
+
 body {
   font-family: 'Gilroy Regular', sans-serif;
 }
@@ -31,6 +36,7 @@ $grey-poker: #292727;
 
 $gilroy-bold: 'Gilroy Bold', sans-serif;
 $gilroy-light: 'Gilroy Light', sans-serif;
+$gilroy-thin: 'Gilroy Thin', sans-serif;
 
 .header {
   .intro {
@@ -144,7 +150,7 @@ $gilroy-light: 'Gilroy Light', sans-serif;
 }
 .meter {
   margin-top: 1.2rem;
-  height: 15vh;
+  height: 18vh;
   background-color: $grey-poker;
   background-image: url('../img/bg-meter.png');
   .headline{
@@ -158,12 +164,84 @@ $gilroy-light: 'Gilroy Light', sans-serif;
   .bold {
     font-family: $gilroy-bold;
   }
-  .numbers::before {
-    content: url('../img/pica.png');
+  .numbers {
+    background: url('../img/picas.png') center center no-repeat;
+    background-size: contain;
+    span {
+      padding: 0 0.8rem;
+      font-family: $gilroy-thin;
+      font-size: 3rem;
+      color: white;
+    }
+    .red {
+      color: $rojo-poker;
+    }
   }
-  .numbers::after {
-    content: url('../img/pica.png');
-    transform: rotate(180deg);
+}
+.ready {
+  margin-top: 1.2rem;
+  height: 50vh;
+  background-color: $grey-poker;
+  background-image: url('../img/bg-ready.png');
+  padding-top: 1.2rem;
+  h3 {
+    font-family: $gilroy-bold;
+    font-size: 3rem;
+    color: $rojo-poker;
+  }
+  h6 {
+    font-family: $gilroy-light;
+    font-size: 1.5rem;
+    color: white;
+    strong {
+      font-family: $gilroy-bold;
+    }
+  }
+  img {
+    padding-top: 2.4rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .header {
+    .intro {
+      margin: 1.2rem;
+      border-top-left-radius: 45px; 
+      border-bottom-right-radius: 45px; 
+      background-image: url('../img/Fondo-header.png');
+      background-size: cover;
+    }
+    .logo-poker {
+      margin-top: 2.4rem;
+      padding-right: 2.4rem;
+    }
+    .texts {
+      position: relative;
+      top: -4rem;
+    }
+    h4, h5, h6 {
+      margin-bottom: 0;
+      line-height: 0.75;
+      font-family: $gilroy-bold;
+      color: white;
+    }
+    h5 {
+      color: $rojo-poker;
+      font-size: 6rem;
+    }
+    h4 {
+      font-size: 12rem;
+    }
+    .highlight-text {
+      margin-top: 2rem;
+    }
+    h6 {
+      font-size: 2rem;
+      line-height: 0.9;
+    }
+    .cta-icon {
+      margin-top: 2vh;
+    }
   }
 }
 

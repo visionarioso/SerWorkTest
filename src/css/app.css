@@ -7256,7 +7256,7 @@ body {
 
 .meter {
   margin-top: 1.2rem;
-  height: 15vh;
+  height: 18vh;
   background-color: #292727;
   background-image: url("../img/bg-meter.png"); }
   .meter .headline {
@@ -7267,8 +7267,63 @@ body {
     line-height: 0.75; }
   .meter .bold {
     font-family: "Gilroy Bold", sans-serif; }
-  .meter .numbers::before {
-    content: url("../img/pica.png"); }
-  .meter .numbers::after {
-    content: url("../img/pica.png");
-    transform: rotate(180deg); }
+  .meter .numbers {
+    background: url("../img/picas.png") center center no-repeat;
+    background-size: contain; }
+    .meter .numbers span {
+      padding: 0 0.8rem;
+      font-family: "Gilroy Thin", sans-serif;
+      font-size: 3rem;
+      color: white; }
+    .meter .numbers .red {
+      color: #c31f39; }
+
+.ready {
+  margin-top: 1.2rem;
+  height: 50vh;
+  background-color: #292727;
+  background-image: url("../img/bg-ready.png");
+  padding-top: 1.2rem; }
+  .ready h3 {
+    font-family: "Gilroy Bold", sans-serif;
+    font-size: 3rem;
+    color: #c31f39; }
+  .ready h6 {
+    font-family: "Gilroy Light", sans-serif;
+    font-size: 1.5rem;
+    color: white; }
+    .ready h6 strong {
+      font-family: "Gilroy Bold", sans-serif; }
+  .ready img {
+    padding-top: 2.4rem; }
+
+@media (min-width: 576px) {
+  .header .intro {
+    margin: 1.2rem;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    background-image: url("../img/Fondo-header.png");
+    background-size: cover; }
+  .header .logo-poker {
+    margin-top: 2.4rem;
+    padding-right: 2.4rem; }
+  .header .texts {
+    position: relative;
+    top: -4rem; }
+  .header h4, .header h5, .header h6 {
+    margin-bottom: 0;
+    line-height: 0.75;
+    font-family: "Gilroy Bold", sans-serif;
+    color: white; }
+  .header h5 {
+    color: #c31f39;
+    font-size: 6rem; }
+  .header h4 {
+    font-size: 12rem; }
+  .header .highlight-text {
+    margin-top: 2rem; }
+  .header h6 {
+    font-size: 2rem;
+    line-height: 0.9; }
+  .header .cta-icon {
+    margin-top: 2vh; } }
