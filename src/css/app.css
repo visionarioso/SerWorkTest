@@ -7139,37 +7139,37 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 @font-face {
-  font-family: 'Gilroy Regular';
+  font-family: 'GilroyRegular';
   src: local("fonts/gilroy-regular.ttf?raw=true") format("ttf"), local("fonts/gilroy-regular-webfont.woff?raw=true") format("woff"), local("fonts/gilroy-regular-webfont.woff2?raw=true") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Gilroy Medium';
+  font-family: 'GilroyMedium';
   src: local("fonts/gilroy-medium.ttf?raw=true") format("ttf"), local("fonts/gilroy-medium-webfont.woff?raw=true") format("woff"), local("fonts/gilroy-medium-webfont.woff2?raw=true") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Gilroy Thin';
+  font-family: 'GilroyThin';
   src: local("fonts/gilroy-thin.ttf?raw=true") format("ttf"), local("fonts/gilroy-thin-webfont.woff?raw=true") format("woff"), local("fonts/gilroy-thin-webfont.woff2?raw=true") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Gilroy Bold';
+  font-family: 'GilroyBold';
   src: local("fonts/gilroy-bold.ttf?raw=true") format("ttf"), local("fonts/gilroy-bold-webfont.woff?raw=true") format("woff"), local("fonts/gilroy-bold-webfont.woff2?raw=true") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Gilroy Light';
+  font-family: 'GilroyLight';
   src: local("fonts/gilroy-light.ttf?raw=true") format("ttf"), local("fonts/gilroy-light-webfont.woff?raw=true") format("woff"), local("fonts/gilroy-light-webfont.woff2?raw=true") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 body {
-  font-family: 'Gilroy Regular', sans-serif; }
+  font-family: 'GilroyRegular', sans-serif; }
 
 .wrapper {
   height: 248vh;
@@ -7191,7 +7191,7 @@ body {
 .header h4, .header h5, .header h6 {
   margin-bottom: 0;
   line-height: 0.75;
-  font-family: "Gilroy Bold", sans-serif;
+  font-family: "GilroyBold", sans-serif;
   color: white; }
 
 .header h5 {
@@ -7244,7 +7244,7 @@ body {
     margin-top: 2.4rem; }
   .figures h3, .figures h4 {
     color: white;
-    font-family: "Gilroy Bold", sans-serif;
+    font-family: "GilroyBold", sans-serif;
     line-height: 0.75; }
   .figures h3 {
     font-size: 3.2rem; }
@@ -7259,7 +7259,7 @@ body {
       margin-bottom: 1.2rem; }
   .figures .yellow-text {
     color: #f1c743;
-    font-family: "Gilroy Bold", sans-serif; }
+    font-family: "GilroyBold", sans-serif; }
   .figures .store {
     position: relative;
     left: -7vw; }
@@ -7276,17 +7276,17 @@ body {
   .meter .headline {
     margin-top: 0.8rem; }
   .meter h5 {
-    font-family: "Gilroy Light", sans-serif;
+    font-family: "GilroyLight", sans-serif;
     color: #c31f39;
     line-height: 1; }
   .meter strong {
-    font-family: "Gilroy Bold", sans-serif; }
+    font-family: "GilroyBold", sans-serif; }
   .meter .numbers {
     background: url("../img/picas.png") center center no-repeat;
     background-size: contain; }
     .meter .numbers span {
       padding: 0 0.8rem;
-      font-family: "Gilroy Thin", sans-serif;
+      font-family: "GilroyThin", sans-serif;
       font-size: 3rem;
       color: white;
       line-height: 0.8; }
@@ -7300,7 +7300,7 @@ body {
   background-image: url("../img/bg-ready.png");
   padding-top: 1.2rem; }
   .ready h3 {
-    font-family: "Gilroy Bold", sans-serif;
+    font-family: "GilroyBold", sans-serif;
     font-size: 3rem;
     color: #c31f39; }
   .ready .input-container {
@@ -7353,11 +7353,11 @@ body {
       .ready .input-container .submit .btn-warning {
         background-color: #f1c743; }
   .ready h6 {
-    font-family: "Gilroy Light", sans-serif;
+    font-family: "GilroyLight", sans-serif;
     font-size: 1.5rem;
     color: white; }
     .ready h6 strong {
-      font-family: "Gilroy Bold", sans-serif; }
+      font-family: "GilroyBold", sans-serif; }
   .ready img {
     padding-top: 2.4rem; }
 
@@ -7379,7 +7379,7 @@ body {
   .header h4, .header h5, .header h6 {
     margin-bottom: 0;
     line-height: 0.75;
-    font-family: "Gilroy Bold", sans-serif;
+    font-family: "GilroyBold", sans-serif;
     color: white; }
   .header h5 {
     color: #c31f39;
@@ -7415,7 +7415,7 @@ body {
       margin-top: 4rem; }
     .figures h3, .figures h4 {
       color: white;
-      font-family: "Gilroy Bold", sans-serif;
+      font-family: "GilroyBold", sans-serif;
       line-height: 0.75; }
     .figures h3 {
       font-size: 4rem; }
@@ -7425,7 +7425,7 @@ body {
         margin-bottom: 1.2rem; }
     .figures .yellow-text {
       color: #f1c743;
-      font-family: "Gilroy Bold", sans-serif; }
+      font-family: "GilroyBold", sans-serif; }
     .figures .store {
       left: 0; }
     .figures .icon {
@@ -7444,14 +7444,14 @@ body {
     .ready .ready-text {
       margin-top: 10vh; }
     .ready h3 {
-      font-family: "Gilroy Bold", sans-serif;
+      font-family: "GilroyBold", sans-serif;
       font-size: 3rem;
       color: #c31f39; }
     .ready h6 {
-      font-family: "Gilroy Light", sans-serif;
+      font-family: "GilroyLight", sans-serif;
       font-size: 1.5rem;
       color: white; }
       .ready h6 strong {
-        font-family: "Gilroy Bold", sans-serif; }
+        font-family: "GilroyBold", sans-serif; }
     .ready img {
       padding-top: 2.4rem; } }
