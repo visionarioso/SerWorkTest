@@ -2,23 +2,34 @@
 
 @font-face {
   font-family: 'Gilroy Regular';
-  src:  url('fonts/gilroy-regular.ttf') format('ttf')
+  src:  url('fonts/gilroy-regular.ttf') format('ttf'),
+        url('fonts/gilroy-regular-webfont.woff') format('woff'),
+        url('fonts/gilroy-regular-webfont.woff2') format('woff2')
 }
 @font-face {
   font-family: 'Gilroy Medium';
-  src:  url('fonts/gilroy-medium.ttf') format('ttf')
+  src:  url('fonts/gilroy-medium.ttf') format('ttf'),
+        url('fonts/gilroy-medium-webfont.woff') format('woff'),
+        url('fonts/gilroy-medium-webfont.woff2') format('woff2')
 }
 @font-face {
   font-family: 'Gilroy Thin';
-  src:  url('fonts/gilroy-thin.ttf') format('ttf')
+  src:  url('fonts/gilroy-thin.ttf') format('ttf'),
+        url('fonts/gilroy-thin-webfont.woff') format('woff'),
+        url('fonts/gilroy-thin-webfont.woff2') format('woff2')
 }
 @font-face {
   font-family: 'Gilroy Bold';
-  src:  url('fonts/gilroy-bold.ttf') format('ttf')
+  src:  url('fonts/gilroy-bold.ttf') format('ttf'),
+        url('fonts/gilroy-bold-webfont.woff') format('woff'),
+        url('fonts/gilroy-bold-webfont.woff2') format('woff2')
+
 }
 @font-face {
   font-family: 'Gilroy Light';
-  src:  url('fonts/gilroy-light.ttf') format('ttf')
+  src:  url('fonts/gilroy-light.ttf') format('ttf'),
+        url('fonts/gilroy-light-webfont.woff') format('woff'),
+        url('fonts/gilroy-light-webfont.woff2') format('woff2')
 }
 
 
@@ -379,7 +390,7 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
     background-image: url('../img/bg-ready.png');
     padding-top: 1.2rem;
     .input-container {
-      
+
     }
     .ready-text {
       margin-top: 10vh;
