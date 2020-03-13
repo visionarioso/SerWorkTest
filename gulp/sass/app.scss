@@ -21,10 +21,6 @@
   src:  url('fonts/gilroy-light.ttf') format('ttf')
 }
 
-html {
-  // height: 232vh;
-  // overflow-y: hidden;
-}
 
 body {
   font-family: 'Gilroy Regular', sans-serif;
@@ -37,6 +33,11 @@ $grey-poker: #292727;
 $gilroy-bold: 'Gilroy Bold', sans-serif;
 $gilroy-light: 'Gilroy Light', sans-serif;
 $gilroy-thin: 'Gilroy Thin', sans-serif;
+
+.wrapper {
+  height: 248vh;
+  overflow-y: hidden;
+}
 
 .header {
   .intro {
@@ -65,7 +66,8 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
   h4 {
     font-size: 6rem;
   }
-  .highlight-text {
+  .highlight-text,
+  .highlight-text-2 {
     margin-top: 2.4rem;
   }
   h6 {
@@ -75,9 +77,7 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
   .red {
     color: $rojo-poker;
   }
-  .cta {
-    z-index: 100;
-  }
+  
   .cta-icon {
     margin-top: 10vh;
     background: url('../img/cta-scroll.png') center no-repeat;
@@ -111,6 +111,7 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
   background-color: $rojo-poker;
   background-image: url('../img/bg-figures.png');
   background-size: cover;
+  z-index: 500;
   .fig-title {
     margin-top: 2.4rem;
   }
@@ -145,23 +146,24 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
   }
   .bottle {
     position: relative;
-    top: -100vh;
+    top: -95vh;
+    left: -20vw;
   }
 }
 .meter {
   margin-top: 1.2rem;
-  height: 18vh;
+  height: 14vh;
   background-color: $grey-poker;
   background-image: url('../img/bg-meter.png');
   .headline{
-    margin-top: 1.2rem;
+    margin-top: 0.8rem;
   }
   h5 {
     font-family: $gilroy-light;
     color: $rojo-poker;
-    line-height: 0.75;
+    line-height: 1;
   }
-  .bold {
+  strong {
     font-family: $gilroy-bold;
   }
   .numbers {
@@ -172,6 +174,7 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
       font-family: $gilroy-thin;
       font-size: 3rem;
       color: white;
+      line-height: 0.8;
     }
     .red {
       color: $rojo-poker;
@@ -189,6 +192,68 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
     font-size: 3rem;
     color: $rojo-poker;
   }
+  .input-container {
+    margin-top: 1.2rem;
+    h3, h6 {
+      line-height: 0.7;
+    }
+    p {
+      margin-top: 3.6rem;
+      font-size: 1.2rem;
+      color: white;
+    }
+    .first-input {
+      float: left;
+      width: 103px;
+      height: 41px;
+      border: 2px solid $yellow-poker;
+      border-top-left-radius: 20px; 
+      border-bottom-left-radius: 20px; 
+      span {
+        padding-left: 1.5rem;
+        color: white;
+        font-size: 1.4rem;
+      }
+      span::after {
+        position: relative;
+        top: 3px;
+        margin: 0.2rem;
+        content: url('../img/pack.png');
+      }
+    }
+    img {
+      padding-top: 0 !important;
+    }
+    .last-input input {
+      background-color: $grey-poker;
+      width: 147px;
+      height: 41px;
+      border: 2px solid $yellow-poker;
+      border-top-right-radius: 20px; 
+      border-bottom-right-radius: 20px;
+      padding-left: 1.5rem;
+      color: white;
+      font-size: 1.4rem;
+    }
+    .disclaimer {
+      margin-top: 1rem;
+      padding-left: 50%;
+      span {
+        text-align: right;
+        color: white;
+        font-size: 0.8rem;
+      }
+    }
+    .submit {
+      margin-top: 1.2rem;
+      .btn {
+        border-radius: 1.25rem;
+      }
+      .btn-warning {
+        background-color: $yellow-poker;
+      }
+    }
+  }
   h6 {
     font-family: $gilroy-light;
     font-size: 1.5rem;
@@ -203,6 +268,10 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
 }
 
 @include media-breakpoint-up(sm) {
+  .wrapper {
+    height: 189vh;
+  }
+
   .header {
     .intro {
       margin: 1.2rem;
@@ -233,7 +302,10 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
       font-size: 12rem;
     }
     .highlight-text {
-      margin-top: 2rem;
+      margin-top: 0;
+    }
+    .highlight-text-2 {
+      margin-top: 4rem;
     }
     h6 {
       font-size: 2rem;
@@ -241,6 +313,92 @@ $gilroy-thin: 'Gilroy Thin', sans-serif;
     }
     .cta-icon {
       margin-top: 2vh;
+    }
+  }
+  .meter {
+    margin-top: 2rem;
+    height: 14vh;
+    .headline{
+      margin-top: 1rem;
+    }
+    .numbers {
+      span {
+        padding: 0 2rem;
+        font-size: 5rem;
+      }
+    }
+  }
+  .figures {
+    margin-top: 1.2rem;
+    height: 70vh;
+    max-height: 70vh;
+    .stamp {
+      position: relative;
+      top: 10vh;
+      right: 5vw;
+    }
+    .fig-title {
+      margin-top: 4rem;
+    }
+    h3, h4 {
+      color: white;
+      font-family: $gilroy-bold;
+      line-height: 0.75;
+    }
+    h3 {
+      font-size: 4rem;
+    }
+    
+    .items {
+      margin-top: 2.4rem;
+      .item {
+        margin-bottom: 1.2rem;
+      }
+    }
+    .yellow-text {
+      color: $yellow-poker;
+      font-family: $gilroy-bold;
+    }
+    .store {
+      left: 0;
+    }
+    .icon {
+      position: relative;
+      left: 2vw;
+    }
+    .bottle {
+      position: relative;
+      top: -125vh;
+      left: 0;
+    }
+  }
+  .ready {
+    margin-top: 1.2rem;
+    height: 70vh;
+    background-color: $grey-poker;
+    background-image: url('../img/bg-ready.png');
+    padding-top: 1.2rem;
+    .input-container {
+      
+    }
+    .ready-text {
+      margin-top: 10vh;
+    }
+    h3 {
+      font-family: $gilroy-bold;
+      font-size: 3rem;
+      color: $rojo-poker;
+    }
+    h6 {
+      font-family: $gilroy-light;
+      font-size: 1.5rem;
+      color: white;
+      strong {
+        font-family: $gilroy-bold;
+      }
+    }
+    img {
+      padding-top: 2.4rem;
     }
   }
 }

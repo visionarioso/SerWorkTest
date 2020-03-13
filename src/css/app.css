@@ -7161,6 +7161,10 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: 'Gilroy Regular', sans-serif; }
 
+.wrapper {
+  height: 248vh;
+  overflow-y: hidden; }
+
 .header .intro {
   background-color: #c31f39;
   height: 95vh;
@@ -7187,7 +7191,8 @@ body {
 .header h4 {
   font-size: 6rem; }
 
-.header .highlight-text {
+.header .highlight-text,
+.header .highlight-text-2 {
   margin-top: 2.4rem; }
 
 .header h6 {
@@ -7196,9 +7201,6 @@ body {
 
 .header .red {
   color: #c31f39; }
-
-.header .cta {
-  z-index: 100; }
 
 .header .cta-icon {
   margin-top: 10vh;
@@ -7226,7 +7228,8 @@ body {
   max-height: 80vh;
   background-color: #c31f39;
   background-image: url("../img/bg-figures.png");
-  background-size: cover; }
+  background-size: cover;
+  z-index: 500; }
   .figures .fig-title {
     margin-top: 2.4rem; }
   .figures h3, .figures h4 {
@@ -7252,20 +7255,21 @@ body {
     left: -7vw; }
   .figures .bottle {
     position: relative;
-    top: -100vh; }
+    top: -95vh;
+    left: -20vw; }
 
 .meter {
   margin-top: 1.2rem;
-  height: 18vh;
+  height: 14vh;
   background-color: #292727;
   background-image: url("../img/bg-meter.png"); }
   .meter .headline {
-    margin-top: 1.2rem; }
+    margin-top: 0.8rem; }
   .meter h5 {
     font-family: "Gilroy Light", sans-serif;
     color: #c31f39;
-    line-height: 0.75; }
-  .meter .bold {
+    line-height: 1; }
+  .meter strong {
     font-family: "Gilroy Bold", sans-serif; }
   .meter .numbers {
     background: url("../img/picas.png") center center no-repeat;
@@ -7274,7 +7278,8 @@ body {
       padding: 0 0.8rem;
       font-family: "Gilroy Thin", sans-serif;
       font-size: 3rem;
-      color: white; }
+      color: white;
+      line-height: 0.8; }
     .meter .numbers .red {
       color: #c31f39; }
 
@@ -7288,6 +7293,55 @@ body {
     font-family: "Gilroy Bold", sans-serif;
     font-size: 3rem;
     color: #c31f39; }
+  .ready .input-container {
+    margin-top: 1.2rem; }
+    .ready .input-container h3, .ready .input-container h6 {
+      line-height: 0.7; }
+    .ready .input-container p {
+      margin-top: 3.6rem;
+      font-size: 1.2rem;
+      color: white; }
+    .ready .input-container .first-input {
+      float: left;
+      width: 103px;
+      height: 41px;
+      border: 2px solid #f1c743;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px; }
+      .ready .input-container .first-input span {
+        padding-left: 1.5rem;
+        color: white;
+        font-size: 1.4rem; }
+      .ready .input-container .first-input span::after {
+        position: relative;
+        top: 3px;
+        margin: 0.2rem;
+        content: url("../img/pack.png"); }
+    .ready .input-container img {
+      padding-top: 0 !important; }
+    .ready .input-container .last-input input {
+      background-color: #292727;
+      width: 147px;
+      height: 41px;
+      border: 2px solid #f1c743;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding-left: 1.5rem;
+      color: white;
+      font-size: 1.4rem; }
+    .ready .input-container .disclaimer {
+      margin-top: 1rem;
+      padding-left: 50%; }
+      .ready .input-container .disclaimer span {
+        text-align: right;
+        color: white;
+        font-size: 0.8rem; }
+    .ready .input-container .submit {
+      margin-top: 1.2rem; }
+      .ready .input-container .submit .btn {
+        border-radius: 1.25rem; }
+      .ready .input-container .submit .btn-warning {
+        background-color: #f1c743; }
   .ready h6 {
     font-family: "Gilroy Light", sans-serif;
     font-size: 1.5rem;
@@ -7298,6 +7352,8 @@ body {
     padding-top: 2.4rem; }
 
 @media (min-width: 576px) {
+  .wrapper {
+    height: 189vh; }
   .header .intro {
     margin: 1.2rem;
     border-top-left-radius: 45px;
@@ -7321,9 +7377,71 @@ body {
   .header h4 {
     font-size: 12rem; }
   .header .highlight-text {
-    margin-top: 2rem; }
+    margin-top: 0; }
+  .header .highlight-text-2 {
+    margin-top: 4rem; }
   .header h6 {
     font-size: 2rem;
     line-height: 0.9; }
   .header .cta-icon {
-    margin-top: 2vh; } }
+    margin-top: 2vh; }
+  .meter {
+    margin-top: 2rem;
+    height: 14vh; }
+    .meter .headline {
+      margin-top: 1rem; }
+    .meter .numbers span {
+      padding: 0 2rem;
+      font-size: 5rem; }
+  .figures {
+    margin-top: 1.2rem;
+    height: 70vh;
+    max-height: 70vh; }
+    .figures .stamp {
+      position: relative;
+      top: 10vh;
+      right: 5vw; }
+    .figures .fig-title {
+      margin-top: 4rem; }
+    .figures h3, .figures h4 {
+      color: white;
+      font-family: "Gilroy Bold", sans-serif;
+      line-height: 0.75; }
+    .figures h3 {
+      font-size: 4rem; }
+    .figures .items {
+      margin-top: 2.4rem; }
+      .figures .items .item {
+        margin-bottom: 1.2rem; }
+    .figures .yellow-text {
+      color: #f1c743;
+      font-family: "Gilroy Bold", sans-serif; }
+    .figures .store {
+      left: 0; }
+    .figures .icon {
+      position: relative;
+      left: 2vw; }
+    .figures .bottle {
+      position: relative;
+      top: -125vh;
+      left: 0; }
+  .ready {
+    margin-top: 1.2rem;
+    height: 70vh;
+    background-color: #292727;
+    background-image: url("../img/bg-ready.png");
+    padding-top: 1.2rem; }
+    .ready .ready-text {
+      margin-top: 10vh; }
+    .ready h3 {
+      font-family: "Gilroy Bold", sans-serif;
+      font-size: 3rem;
+      color: #c31f39; }
+    .ready h6 {
+      font-family: "Gilroy Light", sans-serif;
+      font-size: 1.5rem;
+      color: white; }
+      .ready h6 strong {
+        font-family: "Gilroy Bold", sans-serif; }
+    .ready img {
+      padding-top: 2.4rem; } }
