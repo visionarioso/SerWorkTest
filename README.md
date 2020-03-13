@@ -27,7 +27,7 @@ Para instalar y correr una copia local del proyecto, siga los siguientes pasos (
 
 Clone el proyecto
 ```
-git clone https://gitlab.com/visionarioso/and-test-dejimenezg.git
+git clone https://github.com/visionarioso/SerWorkTest.git
 ```
 Vaya al directorio /gulp
 ```
